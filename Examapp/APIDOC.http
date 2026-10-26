@@ -1,0 +1,52 @@
+### 
+
+GET http://127.0.0.1:8000/questions/2/
+Accept: application/json
+
+###
+
+### 
+
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+Accept: application/json
+
+{
+"question": "What is 5+5?",
+"option_A": "10",
+"option_B": "4",
+"option_C": "55",
+"option_D": "90",
+"correct_answer": "10"
+}
+
+###
+
+### 
+
+GET http://127.0.0.1:8000/questions/1/
+Accept: application/json
+
+###
+
+### 
+
+PUT http://127.0.0.1:8000/questions/5/
+Content-Type: application/json
+Accept: application/json
+
+{
+"question": "5+2",
+"option_A": "10",
+"option_B": "0",
+"option_C": "7",
+"option_D": "52",
+"correct_answer": "7"
+}
+
+###
+
+### 
+
+DELETE http://127.0.0.1:8000/questions/2/
+Accept: application/json
